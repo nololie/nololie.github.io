@@ -37,7 +37,7 @@ p1{
 }
 
 .Cont1{
-	grid-row: 4 / auto;
+	grid-row: 4 / 9;
 	grid-column: 1 / -1;
 }
 
