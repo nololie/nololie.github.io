@@ -1,7 +1,10 @@
-
+a{
+	text-decoration: none;
+}
 html, body{
-	background-color: black;
+	background-color: rgb(200, 300, 350);
 	height: 100%;
+	width: 100%;
 }
 .PortHP{
     display: grid;
@@ -10,6 +13,8 @@ html, body{
 	grid-template: repeat(10, auto) / repeat(10, auto);
 	text-align: center;
 	height: 100%;
+	width: 85%;
+	margin: auto;
 }
 
 h1{
@@ -24,6 +29,7 @@ p1{
 .Contacts{
 	grid-row: 1 / 2;
 	grid-column: 10 / -1;
+	grid-auto-flow: dense;
 }
 
 .About{
