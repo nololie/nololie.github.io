@@ -2,54 +2,67 @@ a{
 	text-decoration: none;
 }
 
-body{
-	background-color: rgb(100, 300, 500);
-	height: 100%;
-	width: 100%;
-	margin: 0;
-}
-
-.PortHP{
-	display: grid;
-	grid-gap: 5px;
-	background-color: #00FF90;
+html{
 	grid-template: repeat(10, auto) / repeat(10, auto);
-	justify-content: center;
-	width: 90%;
-	height: 100%;
-	margin:auto;
+	margin: 0px;
 }
 
 header{
-	grid-column: 1 / -1;
+	display: grid;
 	width: 100%;
-	height: 7vh;
+	grid-row: 1 /2;
+	grid-column: 1 / -1;
 	background-color: #E50404;
 }
 
-nav{
+html, body{
 	height: 100%;
+	width: 100%;
+    margin: auto; 
+}
+
+nav{
+	width: 100%;
+	grid-column: 7 / -1;
+	padding: 10px;
 	float: right;
 }
 
 div1{
+	grid-row: 1 / 2;
+	grid-column: 7 / 8;
 	align-content: center;
+}
+
+div2{
+	grid-row: 1 / 2;
+	grid-column: 8 / 9;
+}
+
+div3{
+	grid-row: 1 / 2;
+	grid-column: 9 / 10;
 }
 
 h1{
 	font-family: sans-serif;
 	text-align: center;
-	grid-row: 1 / 2;
+	grid-row: 2 / 3;
 	grid-column: 1 / -1;
 }
 
-.Content{
-	height: 100%;
+.PortHP{
+	grid-row: 2 / 10;
+	grid-column: 1 / -1;
+	background-color: #00FF90;
+	height: 83%;
+	width: 95%;
+	margin: auto;
 }
 
 p1{
 	text-align: left;
-	grid-column: 1 / -1;
+	grid-column: 1 / 4;
 	padding: 20px;
 }
 
@@ -59,6 +72,7 @@ p1{
 }
 
 .Footer{
-	grid-row: 9 / -1;
+	height: auto;
+	grid-row: 9 / 10;
 	grid-column: 1 / -1;
 }
