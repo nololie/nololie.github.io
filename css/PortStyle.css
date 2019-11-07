@@ -10,9 +10,8 @@
     list-style: none;
     text-decoration: none;
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
     border: 0px;
-    grid-gap: 10px;
 }
 
 body{
@@ -20,43 +19,92 @@ body{
     height: auto;
 }
 
-.portfolio :nth-child(even){
-    background-color: var(--light);
-}
-
+/* main container */
 .portfolio{
     background: goldenrod;
     background-size: auto;
     display: grid;
     width: auto;
     height: auto;
+    grid-gap: 20px;
+}
+/* ============================= */
+
+.myMainNav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: wheat;
+    text-align: center;
+    margin: auto;
 }
 
+.myMainNav a{
+    background: var(--light);
+    text-align: center;
+    display: block;
+    margin: 10px;
+}
 
-.contactMe{
-    display: grid;
-    grid-template-areas:
-    "h h"
-    "f s";
+.myMainNav li{
+    margin: 10px;
+}
+
+/* Home */
+.home{
     width: auto;
     height: 100%;
+    text-align: center;
+    padding: 10px;
 }
 
-.contactH{
-    grid-area: "h";
-    margin: 10px;
+h1{
+}
+
+/* about me */
+.aboutMe{
+    width: auto;
+    height: 100%;
+    background-color: wheat;
     text-align: center;
 }
+/* ============================= */
+
+
+/* skills */
+.skills{
+    width: auto;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+/* ============================= */
+
+
+/* contact me */
+.contactMe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    width: auto;
+    height: 100%;
+    background-color: wheat;
+    text-align: center;
+}
+
+.contactMe h1{
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    margin: 10px;
+}
+
 
 .formal{
-    grid-area: "f";
     margin: 10px;
-    text-align: center;
 }
 
 .social{
-    grid-area: "s";margin: 10px;
-    text-align: center;
+    margin: 10px;
 }
-
-
+/* ============================= */
