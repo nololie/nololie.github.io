@@ -10,17 +10,18 @@
     list-style: none;
     text-decoration: none;
     padding: 10px;
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
-/* body{
+body{
     width: auto;
     height: auto;
-} */
+    background:radial-gradient(black, transparent);
+}
 
 /* main container */
 .portfolio{
-    background: goldenrod;
+    /* background: goldenrod; */
     background-size: auto;
     display: grid;
     width: auto;
@@ -54,8 +55,11 @@
 .aboutMe{
     width: auto;
     height: 100%;
-    background-color: wheat;
     text-align: center;
+}
+
+.aboutMe p{
+    background: burlywood;
 }
 /* ============================= */
 
@@ -73,14 +77,18 @@
 .skills h1{
     grid-column: 1 / -1;
     grid-row: 1 / 2;
+    padding: 0px;
+    margin-bottom: 0px;;
 }
 
 .list1{
+    background: salmon;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
 
 .list2{
+    background: rosybrown;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
@@ -96,19 +104,22 @@
     height: 100%;
     background-color: wheat;
     text-align: center;
+    margin: 0px;
 }
 
 .contactMe h1{
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    margin: 10px;
+    margin: 0px;
+    margin-top: 10px;
+    background: palevioletred;
 }
 
 .formal{
-    margin: 10px;
+    background: sandybrown;
 }
 
 .social{
-    margin: 10px;
+    background: tomato;
 }
 /* ============================= */
