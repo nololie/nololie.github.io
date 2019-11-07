@@ -13,7 +13,7 @@
     border:  0px;
 }
 
-html {
+/* html {
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif, serif;
 }
@@ -172,7 +172,7 @@ body {
 
 /* contactME */
 
-.contentContacts{
+/*.contentContacts{
     background: url(img/daily-t.jpg);
     display: grid;
     grid-gap: 20px;
@@ -183,4 +183,4 @@ body {
 }
 img {
     max-width: 100%;
-}
+} */
