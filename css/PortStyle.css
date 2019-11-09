@@ -36,9 +36,9 @@ body{
 
 /* main container */
 .portfolio{
+    grid-gap: 300px;
     background-size: auto;
     display: grid;
-    grid-gap: 50px;
     width: auto;
     height: auto;
 }
@@ -166,11 +166,6 @@ body{
 
 
 /* portfolio */
-.portfolio{
-    display: grid;
-    border-block-color: var(--shadow);
-}
-
 .websiteRepo{
     background: #DE9F7A
 }
