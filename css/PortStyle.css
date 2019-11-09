@@ -7,10 +7,26 @@
 }
 
 *{  
+    font-family: georgia, serif;
+    font-size: 22.8px;
     list-style: none;
     text-decoration: none;
     padding: 10px;
     grid-gap: 10px;
+    margin: 0px;
+}
+
+li{
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
@@ -21,74 +37,90 @@ body{
 
 /* main container */
 .portfolio{
-    /* background: goldenrod; */
     background-size: auto;
     display: grid;
+    grid-gap: 300px;
     width: auto;
     height: auto;
 }
 /* ============================= */
 
-.myMainNav ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: wheat;
-    text-align: center;
-    margin: auto;
-}
 
-.myMainNav a{
-    background: var(--light);
-    text-align: center;
-    display: block;
+/* nav */
+.myNav{
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top-width: 66;
+    border-bottom-width: 66;
+    position: fixed;
+    box-shadow: var(--shadow);
+    width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
 }
+.myNav a{
+    text-align: center;
+    margin: 20px;
+    display: block;
+    background: sandybrown;
+}
+/* ============================= */
+
 
 /* Home */
 .home{
     width: auto;
     height: 100%;
+    margin-top: 60px;
     text-align: center;
-    padding: 10px;
+    justify-content: center;
 }
+.home p{
+    font-size: 24px;
+    height: max-content;
+}
+/* ============================= */
+
 
 /* about me */
 .aboutMe{
     width: auto;
     height: 100%;
-    text-align: center;
+    text-align: start;
 }
-
 .aboutMe p{
-    background: burlywood;
+    margin-top: 20px;
+    font-size: 24px;
 }
 /* ============================= */
 
 
 /* skills */
 .skills{
+    align-content: center;
     width: auto;
     height: 100%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
+    margin-bottom: 20px;
+    padding: 0px;
 }
-
 .skills h1{
+    background: #E2A684;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    padding: 0px;
-    margin-bottom: 0px;;
 }
-
 .list1{
-    background: salmon;
+    background: rgba(233, 150, 122, 0.774);
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
-
 .list2{
-    background: rosybrown;
+    background: rgba(233, 150, 122, 0.774);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
@@ -100,26 +132,35 @@ body{
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: 1fr auto;
-    width: auto;
-    height: 100%;
-    background-color: wheat;
     text-align: center;
-    margin: 0px;
+    align-content: center;
 }
-
 .contactMe h1{
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    margin: 0px;
-    margin-top: 10px;
-    background: palevioletred;
+    background: #DE9F7A;
+    font-style: italic;
 }
-
 .formal{
-    background: sandybrown;
+    background:rgba(233, 150, 122, 0.774);
 }
-
 .social{
-    background: tomato;
+    background: rgba(233, 150, 122, 0.774);
+}
+/* ============================= */
+
+
+/* portfolio */
+.myportfolio{
+    align-content: center;
+    display: grid;
+    grid-gap: 20px;
+    padding-top: 100px;
+}
+.websiteRepo{
+    background: #DE9F7A
+}
+.otherRepos{
+    background: #DE9F7A
 }
 /* ============================= */
