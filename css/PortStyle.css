@@ -11,32 +11,32 @@
     font-size: 22.8px;
     list-style: none;
     text-decoration: none;
-    padding: 10px;
     grid-gap: 10px;
     margin: 0px;
 }
-
 li{
-    font-size: 20px;
+    font-size: 25px;
 }
-
 h1{
     text-align: center;
-    margin-top: 20px;
-    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 40px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+h2{
+    text-align: center;
+}
+p{
+    margin: 20px;
+}
 body{
-    width: auto;
-    height: auto;
-    background:radial-gradient(black, transparent);
+    margin: 10px;
 }
 
 /* main container */
 .portfolio{
-    grid-gap: 300px;
+    grid-gap: 200px;
     background-size: auto;
     display: grid;
     width: auto;
@@ -47,23 +47,25 @@ body{
 
 /* nav */
 .myNav{
-    font-size: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-top-width: 66;
-    border-bottom-width: 66;
     position: fixed;
-    box-shadow: var(--shadow);
-    width: 100%;
-    padding: 0;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 3.5rem;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    box-shadow: var(--shadow);
+    font-size: 25px;
+    align-content: center;
 }
 .myNav a{
+    color: black;
+    font-size: 27px;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
+    height: 80%;
     display: block;
-    background: sandybrown;
+    background: rgba(138, 84, 226, 0.452);
 }
 /* ============================= */
 
@@ -89,6 +91,9 @@ body{
     height: 100%;
     text-align: start;
 }
+.aboutMe h1{
+    background: rgba(27, 184, 158, 0.596);
+}
 .aboutMe p{
     margin-top: 20px;
     font-size: 24px;
@@ -109,17 +114,17 @@ body{
     padding: 0px;
 }
 .skills h1{
-    background: #E2A684;
+    background: rgba(27, 184, 158, 0.596);
     grid-column: 1 / -1;
     grid-row: 1 / 2;
 }
 .list1{
-    background: rgba(233, 150, 122, 0.774);
+    background:rgba(33, 241, 78, 0.486);
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
 .list2{
-    background: rgba(233, 150, 122, 0.774);
+    background:rgba(33, 241, 78, 0.486);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
@@ -133,43 +138,36 @@ body{
     grid-template-rows: 1fr auto;
     text-align: center;
     align-content: center;
+    margin-bottom: 100px;
 }
 .contactMe h1{
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    background: #DE9F7A;
+    background: rgba(27, 184, 158, 0.596);
     font-style: italic;
 }
 .formal{
-    background:rgba(233, 150, 122, 0.774);
+    padding: 20px;
+    background:rgba(33, 241, 78, 0.486);
 }
 .social{
-    background: rgba(233, 150, 122, 0.774);
+    padding: 20px;
+    background:rgba(33, 241, 78, 0.486);
 }
 /* ============================= */
 
 
 /* portfolio */
-.myportfolio{
-    align-content: center;
-    display: grid;
-    grid-gap: 20px;
-    padding-top: 100px;
+.myportfolio h1{
+    margin-top: 100px;
+    background: rgba(27, 184, 158, 0.596);
 }
 .websiteRepo{
-    background: #DE9F7A
+    padding: 20px;
+    background:rgba(122, 233, 168, 0.527);
 }
 .otherRepos{
-    background: #DE9F7A
+    padding: 20px;
+    background:rgba(122, 233, 168, 0.527);
 }
 /* ============================= */
-
-
-/* portfolio */
-.websiteRepo{
-    background: #DE9F7A
-}
-
-.otherRepos{
-    background: #DE9F7A
-}
