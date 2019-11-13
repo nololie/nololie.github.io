@@ -14,6 +14,9 @@
     grid-gap: 10px;
     margin: 0px;
 }
+i{
+    color: black;
+}
 li{
     padding: 15px;
     font-size: 25px;
@@ -24,11 +27,15 @@ h1{
     padding-bottom: 20px;
     font-size: 40px;
 }
-h2{
-    text-align: center;
+.heads, h2{
     padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-bottom-style: solid;
 }
 p{
+    font-size: 25px;
     margin: 20px;
 }
 body{
@@ -38,13 +45,11 @@ body{
 /* main container */
 .portfolio{
     grid-gap: 200px;
-    background-size: auto;
     display: grid;
-    width: auto;
+    width: 100%;
     height: auto;
 }
 /* ============================= */
-
 
 /* nav */
 .myNav{
@@ -70,6 +75,34 @@ body{
 }
 /* ============================= */
 
+.contactMe{
+        display: block;
+        text-align: center;
+        align-content: center;
+        margin-bottom: 100px;
+}
+.contactMe h1{
+    background: rgba(27, 184, 158, 0.596);
+}
+.formal{
+    padding: 20px;
+    background:rgba(33, 241, 78, 0.486);
+}
+.social{
+    padding: 20px;
+    background:rgba(33, 241, 78, 0.486);
+}
+.contactMe a{
+    display: block;
+}
+/* .fa-github-square{
+    color: black;
+}
+.fa-instagram{
+    color: black;
+} */
+/* ============================= */
+
 
 /* Home */
 .home{
@@ -79,9 +112,8 @@ body{
     text-align: center;
     justify-content: center;
 }
-.home p{
-    font-size: 24px;
-    height: max-content;
+.home p, .aboutMe p{
+    font-size: 40px;
 }
 /* ============================= */
 
@@ -97,68 +129,32 @@ body{
 }
 .aboutMe p{
     margin-top: 20px;
-    font-size: 24px;
 }
 /* ============================= */
 
-
 /* skills */
 .skills{
-    align-content: center;
-    width: auto;
-    height: 100%;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    margin-bottom: 20px;
-    padding: 0px;
 }
-.skills h1{
-    background: rgba(27, 184, 158, 0.596);
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-}
-.list1{
-    background:rgba(33, 241, 78, 0.486);
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-.list2{
-    background:rgba(33, 241, 78, 0.486);
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
+
 /* ============================= */
 
 
 /* contact me */
-.contactMe{
+/* .contactMe{
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: 1fr auto;
     text-align: center;
     align-content: center;
     margin-bottom: 100px;
-}
-.contactMe h1{
+} */
+/* .contactMe h1{
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     background: rgba(27, 184, 158, 0.596);
     font-style: italic;
-}
-.formal{
-    
-    padding: 20px;
-    background:rgba(33, 241, 78, 0.486);
-}
-.social{
-    padding: 20px;
-    background:rgba(33, 241, 78, 0.486);
-}
-.contactMe a{
-    display: block;
-}
+} */
 /* ============================= */
 
 
@@ -170,11 +166,20 @@ body{
 .websiteRepo{
     padding: 20px;
     background:rgba(122, 233, 168, 0.527);
+    display: block;
+    /* border-bottom: rgb(0, 252, 197); */
 }
 .otherRepos{
     padding: 20px;
     background:rgba(122, 233, 168, 0.527);
+    display: block;
+    box-shadow: red;
 }
 /* ============================= */
 
+
 /* media quiery */
+/* for when screan width is smaller than 320px */
+@media only screen and (min-width: 320px) {
+    
+}
