@@ -19,6 +19,8 @@ i{
 li{
     padding: 15px;
     font-size: 25px;
+    align-items: center;
+    justify-items: center;
 }
 h1{
     text-align: center;
@@ -31,19 +33,21 @@ h1{
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
-    border-bottom-style: solid;
 }
 p{
     font-size: 25px;
     margin: 20px;
+    align-self: center;
+    justify-self: center;
 }
 body{
     margin: 10px;
 }
 
+
 /* main container */
 .portfolio{
-    grid-gap: 200px;
+    grid-gap: 300px;
     display: grid;
     width: 100%;
     height: auto;
@@ -52,36 +56,24 @@ body{
 
 /* nav */
 .myNav{
-    background: url("background-blur-clean-clear-531880.jpg");
-    background-size: cover;
-    background-repeat: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3.5rem;
-    grid-template-columns: 1fr 1fr;
     display: grid;
-    box-shadow: var(--shadow);
-    font-size: 25px;
-    align-content: center;
+    grid-template: auto / auto auto;
 }
 .myNav a{
     color: black;
     font-size: 27px;
-    text-align: center;
-    margin: 10px;
+    margin: 20px;
     height: 80%;
     display: block;
     background: rgba(84, 188, 226, 0.466);
 }
 /* ============================= */
 
+/* Contact me */
 .contactMe{
         display: block;
         text-align: center;
         align-content: center;
-        margin-bottom: 100px;
 }
 .contactMe h1{
     background: rgba(27, 184, 158, 0.596);
@@ -90,7 +82,6 @@ body{
     padding: 20px;
     background:rgba(33, 241, 78, 0.486);
 }
-
 .formal1{
     display: grid;
     grid-template-columns: repeat(3, 99.75px);
@@ -98,7 +89,6 @@ body{
     padding: 20px;
     background:rgba(33, 241, 78, 0.486);
 }
-
 .formal1 .heads{
     grid-column: 1 / -1;
 }
@@ -114,14 +104,21 @@ body{
 
 /* Home */
 .home{
+    padding: 0;
+    padding-top: 8rem;
     width: auto;
-    height: 100%;
-    margin-top: 60px;
+    height: 40rem;
+    background: url(./ThapsAgency.jpg);
+    background-size: cover;
     text-align: center;
-    justify-content: center;
+    align-items: center;
 }
-.home p, .aboutMe p{
-    font-size: 40px;
+.home h1{  
+    margin-bottom: 10rem;    
+    font-size: 100px;
+}
+.home p{
+    margin-bottom: 10rem;
 }
 /* ============================= */
 
@@ -132,37 +129,37 @@ body{
     height: 100%;
     text-align: start;
 }
-.aboutMe h1{
-    background: rgba(27, 184, 158, 0.596);
-}
+
 .aboutMe p{
     margin-top: 20px;
 }
 /* ============================= */
 
+
 /* skills */
 .skills{
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+.skills h1{
+    margin-top: 100px;
+    background: rgba(27, 184, 158, 0.596);
+}
+>>>>>>> 664aff5588cc5766650437f2d3c520fa4e6e6764
 /* ============================= */
 
 
 /* portfolio */
-.myportfolio h1{
-    margin-top: 100px;
-    background: rgba(27, 184, 158, 0.596);
+.myportfolio, .h1{
+    text-align: center;
+    display: block;
 }
 .websiteRepo{
     padding: 20px;
-    background:rgba(122, 233, 168, 0.527);
-    display: block;
-    /* border-bottom: rgb(0, 252, 197); */
 }
 .otherRepos{
     padding: 20px;
-    background:rgba(122, 233, 168, 0.527);
-    display: block;
-    box-shadow: red;
 }
 /* ============================= */
 
@@ -172,3 +169,4 @@ body{
 @media only screen and (min-width: 320px) {
     
 }
+/* ============================= */
