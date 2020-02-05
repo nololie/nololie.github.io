@@ -3,8 +3,10 @@
     font-size: 22.8px;
     list-style: none;
     text-decoration: none;
-    grid-gap: 10px;
+    text-align: center;
+    justify-content: center;
     margin: 0px;
+    grid-gap: 10px;
 }
 i{
     color: black;
@@ -12,36 +14,34 @@ i{
 li{
     padding: 15px;
     font-size: 25px;
-    align-items: center;
-    justify-items: center;
+    font-weight: normal;
 }
 h1{
-    text-align: center;
-    font-size: 40px;
+    font-size: 60px;
 }
 h2{
     padding: 15px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 30px;
-    text-align: center;
 }
 p{
     font-size: 25px;
-    margin: 20px;
-    align-self: center;
-    justify-self: center;
+    margin: 40px;
 }
 body{
     height: 100vh;
     margin: 10px;
 }
-
+.formal{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
 
 /* main container */
 .portfolio{
-    justify-content: center;
     display: grid;
+    grid-gap: 5rem;
     width: 100%;
     height: 100vh;
 }
@@ -51,8 +51,6 @@ body{
 .myNav{
     display: grid;
     grid-template-columns: 1fr  1fr ;
-    text-align: center;
-    text-justify: center;
 }
 .myNav a{
     color: black;
@@ -60,51 +58,35 @@ body{
     height: auto;
     width: auto;                                                                                  ;
     background: rgba(84, 188, 226, 0.466);
-    text-align: center;
-    text-justify: center;
 }
 /* ============================= */
 
 /* Contact me */
 .contactMe{
     height: 100vh;
-    text-align: center;
-    align-content: center;
     background:rgba(33, 241, 78, 0.486);
 }
 .contactMe h1{
     background: rgba(27, 184, 158, 0.596);
-}
-.formal{
-    padding: 20px;
-}
-.social{
-    padding: 20px;
-    /* background:rgba(33, 241, 78, 0.486); */
-}
-.contactMe a{
-    display: block;
 }
 /* ============================= */
 
 
 /* Home */
 .home{
-    padding: 0;
     width: auto;
     height: 100vh;
     background: url(../nolo.jpg);
     background-repeat: no-repeat;
     background: contain;
-    text-align: center;
+    display: grid;
+    grid-template-rows: 2fr 3fr auto;
 }
 .home h1{  
-    /* margin-bottom: 15%;     */
     font-size: 100px;
 }
 .home p{
     font-weight: 700;
-    /* margin-bottom: 15%; */
 }
 /* ============================= */
 
@@ -112,11 +94,6 @@ body{
 /* about me */
 .aboutMe{
     height: 100vh;
-    text-align: start;
-}
-
-.aboutMe p{
-    margin-top: 20px;
 }
 /* ============================= */
 
@@ -124,31 +101,23 @@ body{
 /* skills */
 .skills{
     height: 100vh;
-    text-align: center;
     background:rgba(33, 241, 78, 0.486);
 }
 .skills h1{
     background: rgba(27, 184, 158, 0.596);
 }
-.skills, .heads{
-    margin: 0em;
-}
-.formal1{
-    display: grid;
-    grid-template-columns: repeat(3, 99.75px);
-    justify-content: center;
-}
-
- .heads{
+.heads{
     grid-column: 1 / -1;
+}
+.formal p{
+    grid-column: 2 / 3;
 }
 /* ============================= */
 
 
 /* portfolio */
-.myportfolio, .h1{
+.myportfolio{
     height: 100vh;
-    text-align: center;
 }
 .websiteRepo{
     padding: 20px;
