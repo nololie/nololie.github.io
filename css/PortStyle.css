@@ -1,10 +1,3 @@
-/* css variables */
-:root {
-    --primary: #ddd;
-    --dark: #333;
-    --light: #fff;
-    --shadow: 0 1px 5px rgba(104, 204, 104, 0.8);
-}
 *{  
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 22.8px;
@@ -26,13 +19,12 @@ h1{
     text-align: center;
     font-size: 40px;
 }
-.heads, h2{
+h2{
     padding: 15px;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
     text-align: center;
-    text-justify: center;
 }
 p{
     font-size: 25px;
@@ -41,16 +33,17 @@ p{
     justify-self: center;
 }
 body{
+    height: 100vh;
     margin: 10px;
 }
 
 
 /* main container */
 .portfolio{
-    grid-gap: 300px;
+    justify-content: center;
     display: grid;
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 /* ============================= */
 
@@ -75,30 +68,19 @@ body{
 /* Contact me */
 .contactMe{
     height: 100vh;
-    display: block;
     text-align: center;
     align-content: center;
+    background:rgba(33, 241, 78, 0.486);
 }
 .contactMe h1{
     background: rgba(27, 184, 158, 0.596);
 }
 .formal{
     padding: 20px;
-    background:rgba(33, 241, 78, 0.486);
-}
-.formal1{
-    display: grid;
-    grid-template-columns: repeat(3, 99.75px);
-    justify-content: center;
-    padding: 20px;
-    background:rgba(33, 241, 78, 0.486);
-}
-.formal1 .heads{
-    grid-column: 1 / -1;
 }
 .social{
     padding: 20px;
-    background:rgba(33, 241, 78, 0.486);
+    /* background:rgba(33, 241, 78, 0.486); */
 }
 .contactMe a{
     display: block;
@@ -115,22 +97,20 @@ body{
     background-repeat: no-repeat;
     background: contain;
     text-align: center;
-    align-items: center;
 }
 .home h1{  
-    margin-bottom: 7rem;    
+    /* margin-bottom: 15%;     */
     font-size: 100px;
 }
 .home p{
     font-weight: 700;
-    margin-bottom: 10rem;
+    /* margin-bottom: 15%; */
 }
 /* ============================= */
 
 
 /* about me */
 .aboutMe{
-    width: auto;
     height: 100vh;
     text-align: start;
 }
@@ -145,18 +125,30 @@ body{
 .skills{
     height: 100vh;
     text-align: center;
+    background:rgba(33, 241, 78, 0.486);
 }
 .skills h1{
-    margin-top: 100px;
     background: rgba(27, 184, 158, 0.596);
+}
+.skills, .heads{
+    margin: 0em;
+}
+.formal1{
+    display: grid;
+    grid-template-columns: repeat(3, 99.75px);
+    justify-content: center;
+}
+
+ .heads{
+    grid-column: 1 / -1;
 }
 /* ============================= */
 
 
 /* portfolio */
 .myportfolio, .h1{
+    height: 100vh;
     text-align: center;
-    display: block;
 }
 .websiteRepo{
     padding: 20px;
