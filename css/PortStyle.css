@@ -74,9 +74,10 @@ body{
 
 /* Contact me */
 .contactMe{
-        display: block;
-        text-align: center;
-        align-content: center;
+    height: 100vh;
+    display: block;
+    text-align: center;
+    align-content: center;
 }
 .contactMe h1{
     background: rgba(27, 184, 158, 0.596);
@@ -109,9 +110,10 @@ body{
 .home{
     padding: 0;
     width: auto;
-    height: auto;
+    height: 100vh;
     background: url(../nolo.jpg);
-    background-size: cover;
+    background-repeat: no-repeat;
+    background: contain;
     text-align: center;
     align-items: center;
 }
@@ -129,7 +131,7 @@ body{
 /* about me */
 .aboutMe{
     width: auto;
-    height: 100%;
+    height: 100vh;
     text-align: start;
 }
 
@@ -141,6 +143,7 @@ body{
 
 /* skills */
 .skills{
+    height: 100vh;
     text-align: center;
 }
 .skills h1{
