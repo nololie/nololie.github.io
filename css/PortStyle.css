@@ -1,0 +1,171 @@
+/* css variables */
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 204, 104, 0.8);
+}
+*{  
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22.8px;
+    list-style: none;
+    text-decoration: none;
+    grid-gap: 10px;
+    margin: 0px;
+}
+i{
+    color: black;
+}
+li{
+    padding: 15px;
+    font-size: 25px;
+    align-items: center;
+    justify-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.heads, h2{
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    text-justify: center;
+}
+p{
+    font-size: 25px;
+    margin: 20px;
+    align-self: center;
+    justify-self: center;
+}
+body{
+    margin: 10px;
+}
+
+
+/* main container */
+.portfolio{
+    grid-gap: 300px;
+    display: grid;
+    width: 100%;
+    height: auto;
+}
+/* ============================= */
+
+/* nav */
+.myNav{
+    display: grid;
+    grid-template-columns: 1fr  1fr ;
+    text-align: center;
+    text-justify: center;
+}
+.myNav a{
+    color: black;
+    font-size: 27px;
+    height: auto;
+    width: auto;                                                                                  ;
+    background: rgba(84, 188, 226, 0.466);
+    text-align: center;
+    text-justify: center;
+}
+/* ============================= */
+
+/* Contact me */
+.contactMe{
+        display: block;
+        text-align: center;
+        align-content: center;
+}
+.contactMe h1{
+    background: rgba(27, 184, 158, 0.596);
+}
+.formal{
+    padding: 20px;
+    background:rgba(33, 241, 78, 0.486);
+}
+.formal1{
+    display: grid;
+    grid-template-columns: repeat(3, 99.75px);
+    justify-content: center;
+    padding: 20px;
+    background:rgba(33, 241, 78, 0.486);
+}
+.formal1 .heads{
+    grid-column: 1 / -1;
+}
+.social{
+    padding: 20px;
+    background:rgba(33, 241, 78, 0.486);
+}
+.contactMe a{
+    display: block;
+}
+/* ============================= */
+
+
+/* Home */
+.home{
+    padding: 0;
+    width: auto;
+    height: auto;
+    background: url(../nolo.jpg);
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+}
+.home h1{  
+    margin-bottom: 7rem;    
+    font-size: 100px;
+}
+.home p{
+    margin-bottom: 10rem;
+}
+/* ============================= */
+
+
+/* about me */
+.aboutMe{
+    width: auto;
+    height: 100%;
+    text-align: start;
+}
+
+.aboutMe p{
+    margin-top: 20px;
+}
+/* ============================= */
+
+
+/* skills */
+.skills{
+    text-align: center;
+}
+.skills h1{
+    margin-top: 100px;
+    background: rgba(27, 184, 158, 0.596);
+}
+/* ============================= */
+
+
+/* portfolio */
+.myportfolio, .h1{
+    text-align: center;
+    display: block;
+}
+.websiteRepo{
+    padding: 20px;
+}
+.otherRepos{
+    padding: 20px;
+}
+/* ============================= */
+
+
+/* media quiery */
+/* for when screan width is smaller than 320px */
+@media only screen and (min-width: 320px) {
+    
+}
+/* ============================= */
