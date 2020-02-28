@@ -1,10 +1,9 @@
 *{  
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 22.8px;
+    font-size: 25px;
     list-style: none;
     text-decoration: none;
     text-align: center;
-    justify-content: center;
     margin: 0px;
     grid-gap: 10px;
 }
@@ -13,124 +12,98 @@ i{
 }
 li{
     padding: 15px;
-    font-size: 25px;
     font-weight: normal;
 }
 h1{
     font-size: 60px;
 }
 h2{
-    padding: 15px;
+    padding: 40px;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 30px;
 }
 p{
-    font-size: 25px;
-    margin: 40px;
+    padding: 40px;
 }
-body{
-    height: 100vh;
+/* body{
     margin: 10px;
-}
-.formal{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-}
+} */
 
-/* main container */
-.portfolio{
-    display: grid;
-    grid-gap: 5rem;
-    width: 100%;
-    height: 100vh;
-}
-/* ============================= */
-
-/* nav */
-.myNav{
-    display: grid;
-    grid-template-columns: 1fr  1fr ;
-}
-.myNav a{
-    color: black;
-    font-size: 27px;
-    height: auto;
-    width: auto;                                                                                  ;
-    background: rgba(84, 188, 226, 0.466);
-}
-/* ============================= */
-
-/* Contact me */
-.contactMe{
-    height: 100vh;
-    background:rgba(33, 241, 78, 0.486);
-}
-.contactMe h1{
-    background: rgba(27, 184, 158, 0.596);
-}
-/* ============================= */
-
-
-/* Home */
+/* MOBILE */
+/* HOME section */
 .home{
-    width: auto;
-    height: 100vh;
-    background: url(../nolo.jpg);
-    background-repeat: no-repeat;
-    background: contain;
-    display: grid;
-    grid-template-rows: 2fr 3fr auto;
+margin-bottom: 10vh;
+background: url('../nolo.jpg');
+background-size: cover;
+background-repeat: no-repeat;
 }
-.home h1{  
-    font-size: 100px;
+.home h1{
+    padding-top: 20vh;
+}
+.home h1, .home p{
+    margin-bottom: 20vh;
 }
 .home p{
-    font-weight: 700;
+    font-weight: bolder;
+    font-size: 27px;
 }
-/* ============================= */
+.home .Overlay{
+    background: rgba(148, 102, 102, 0.226);
+}
+.myNav{
+    padding-bottom: 20vh;
+}
+.myNav a{
+    display: block;
+    margin-top: 1vh;
+    color: black;
+    font-weight: bolder;
+    background:  rgba(8, 240, 182, 0.555);
+}
+.myNav a:hover{
+    background: rgba(8, 240, 85, 0.918);
+}
+/* ================== */
 
-
-/* about me */
+/* ABOUT section */
 .aboutMe{
-    height: 100vh;
+    margin-bottom: 10vh;
 }
-/* ============================= */
+/* ================== */
 
-
-/* skills */
+/* SILLS section */
 .skills{
-    height: 100vh;
-    background:rgba(33, 241, 78, 0.486);
+    background-color: rgba(8, 240, 46, 0.555);
+    margin-bottom: 10vh;
 }
 .skills h1{
-    background: rgba(27, 184, 158, 0.596);
+    background-color: rgba(8, 240, 182, 0.555);
 }
-.heads{
-    grid-column: 1 / -1;
-}
-.formal p{
-    grid-column: 2 / 3;
-}
-/* ============================= */
+/* ================== */
 
+/* PORTFOLIO section */
+#myportfolio{
+    margin-bottom: 10vh;
+}
+/* ================== */
 
-/* portfolio */
-.myportfolio{
-    height: 100vh;
+/* CONTACT section */
+.contactMe{
+    background-color: rgba(8, 240, 46, 0.555);
 }
-.websiteRepo{
-    padding: 20px;
+.contactMe h1{
+    background-color: rgba(8, 240, 182, 0.555);
 }
-.otherRepos{
-    padding: 20px;
+.contactMe .social{
+    padding-bottom: 5vh;
 }
-/* ============================= */
-
-
-/* media quiery */
-/* for when screan width is smaller than 320px */
-@media only screen and (min-width: 320px) {
-    
+#gmail :hover{
+    color: rgb(255, 0, 0);
 }
-/* ============================= */
+#linkedin :hover{
+    color: blue;
+}
+#ig :hover{
+    color: rgb(236, 19, 19);
+}
+/* ================== */
