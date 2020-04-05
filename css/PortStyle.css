@@ -25,39 +25,40 @@ h2{
 p{
     padding: 40px;
 }
-/* body{
-    margin: 10px;
-} */
 
 /* MOBILE */
 /* HOME section */
 .home{
-margin-bottom: 10vh;
-background: url('../nolo.jpg');
-background-size: cover;
-background-repeat: no-repeat;
+    padding: 3% 4%;
+    margin-bottom: 5vh;
+    background: url('../nolo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .home h1{
-    padding-top: 20vh;
+    padding-top: 5vh;
 }
 .home h1, .home p{
     margin-bottom: 20vh;
 }
 .home p{
     font-weight: bolder;
-    font-size: 27px;
+    font-size: 30px;
 }
 .home .Overlay{
-    background: rgba(148, 102, 102, 0.226);
+    background-color: rgba(24, 23, 23, 0.5);
 }
 .myNav{
-    padding-bottom: 20vh;
+    padding-bottom: 5vh;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .myNav a{
-    display: block;
     margin-top: 1vh;
-    color: black;
+    padding: 1vh;
     font-weight: bolder;
+    display: block;
+    color: black;
     background:  rgba(8, 240, 182, 0.555);
 }
 .myNav a:hover{
@@ -68,6 +69,12 @@ background-repeat: no-repeat;
 /* ABOUT section */
 .aboutMe{
     margin-bottom: 10vh;
+}
+.aboutMe h1, #myportfolio h1{
+    margin-bottom: 5vh;
+}
+.aboutMe p{
+    background-color: rgba(85, 79, 79, 0.103);
 }
 /* ================== */
 
@@ -84,6 +91,24 @@ background-repeat: no-repeat;
 /* PORTFOLIO section */
 #myportfolio{
     margin-bottom: 10vh;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+}
+#myportfolio h1{
+    grid-row: 1/2;
+}
+#myportfolio h2{
+    padding: 20px;
+}
+.websiteRepo{
+    background-color: rgba(85, 79, 79, 0.103);
+    grid-row: 2/3;
+    margin-left: 10px;
+}
+.otherRepos{
+    background-color: rgba(85, 79, 79, 0.103);
+    grid-row: 3/4;
+    margin-right: 10px;
 }
 /* ================== */
 
