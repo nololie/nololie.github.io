@@ -60,6 +60,7 @@ p{
     display: block;
     color: black;
     background:  rgba(8, 240, 182, 0.555);
+    border-radius: 15px;
 }
 .myNav a:hover{
     background: rgba(8, 240, 85, 0.918);
@@ -135,6 +136,8 @@ form{
     padding: 10px;
 }
 input{
+    border: springgreen solid 7px;
+    border-radius: 40px;
     width: 90%;
     padding: 10px;
 }
@@ -143,5 +146,6 @@ h3{
 }
 #submit{
     width: 50%;
+    border-radius: 15px;
 }
 /* ================== */
