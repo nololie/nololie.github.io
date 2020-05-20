@@ -89,6 +89,27 @@ body{
 .skills h1{
     background-color: rgba(8, 240, 182, 0.555);
 }
+.skills h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.skills .formal{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+.skills .formal p{
+    font-size: xx-large;
+}
+p.html, p.javaScript{
+    float: right;
+}
+p.css, p.Cpp{
+    float: left;
+}
+img.html,img.css,img.Cpp,img.javaScript{
+    vertical-align: middle;
+}
 /* ================== */
 
 /* PORTFOLIO section */
