@@ -72,12 +72,11 @@ body{
 /* ABOUT section */
 .aboutMe{
     margin-bottom: 10vh;
+    border-radius: 20px;
+    background-color: rgba(24, 23, 23, 0.5);
 }
 .aboutMe h1, #myportfolio h1{
     margin-bottom: 5vh;
-}
-.aboutMe p{
-    background-color: rgba(85, 79, 79, 0.103);
 }
 /* ================== */
 
@@ -115,18 +114,13 @@ img.html,img.css,img.Cpp,img.javaScript{
 /* PORTFOLIO section */
 #myportfolio{
     margin-bottom: 10vh;
-    display: grid;
-    grid-template-rows: auto 1fr;
-}
-#myportfolio h1{
-    grid-row: 1/2;
+    border-radius: 20px;
+    background-color: rgba(24, 23, 23, 0.5);
 }
 #myportfolio h2{
-    padding: 20px;
+    padding: 15px;
 }
 .websiteRepo{
-    background-color: rgba(85, 79, 79, 0.103);
-    grid-row: 2/3;
     margin: 10px;
 }
 /* ================== */
@@ -148,14 +142,14 @@ img.html,img.css,img.Cpp,img.javaScript{
     color: rgb(236, 19, 19);
 }
 form{
-    border: rgba(16, 31, 27, 0.555) solid 10px;
+    border: rgba(16, 31, 27, 0.555) solid 5px;
     border-radius: 30px;
     margin: 0 5vh;
     padding: 10px;
 }
 input{
-    border: springgreen solid 7px;
-    border-radius: 40px;
+    border: springgreen solid 5px;
+    border-radius: 20px;
     width: 90%;
     padding: 10px;
 }
