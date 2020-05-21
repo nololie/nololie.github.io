@@ -116,7 +116,7 @@ img.html,img.css,img.Cpp,img.javaScript{
 #myportfolio{
     margin-bottom: 10vh;
     display: grid;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto 1fr;
 }
 #myportfolio h1{
     grid-row: 1/2;
@@ -127,11 +127,6 @@ img.html,img.css,img.Cpp,img.javaScript{
 .websiteRepo{
     background-color: rgba(85, 79, 79, 0.103);
     grid-row: 2/3;
-    margin: 10px;
-}
-.otherRepos{
-    background-color: rgba(85, 79, 79, 0.103);
-    grid-row: 3/4;
     margin: 10px;
 }
 /* ================== */
