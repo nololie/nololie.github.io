@@ -31,7 +31,8 @@ body{
 /* MOBILE */
 /* HOME section */
 .home{
-    padding: 3%;
+    padding: 3% 0;
+    margin-top: 2vh;
     margin-bottom: 5vh;
     background: url('../nolo.jpg');
     background-size: cover;
@@ -71,8 +72,8 @@ body{
 
 /* ABOUT section */
 .aboutMe{
-    margin-bottom: 10vh;
-    border-radius: 20px;
+    margin-bottom: 5vh;
+    border-radius: 10px;
     background-color: rgba(24, 23, 23, 0.5);
 }
 .aboutMe h1, #myportfolio h1{
@@ -83,7 +84,7 @@ body{
 /* SILLS section */
 .skills{
     background-color: rgba(8, 240, 46, 0.555);
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 .skills h1{
     background-color: rgba(8, 240, 182, 0.555);
@@ -113,8 +114,8 @@ img.html,img.css,img.Cpp,img.javaScript{
 
 /* PORTFOLIO section */
 #myportfolio{
-    margin-bottom: 10vh;
-    border-radius: 20px;
+    margin-bottom: 5vh;
+    border-radius: 10px;
     background-color: rgba(24, 23, 23, 0.5);
 }
 #myportfolio h2{
@@ -127,6 +128,7 @@ img.html,img.css,img.Cpp,img.javaScript{
 
 /* CONTACT section */
 .contactMe{
+    margin-bottom: 2vh;
     background-color: rgba(8, 240, 46, 0.555);
 }
 .contactMe h1{
@@ -143,13 +145,15 @@ img.html,img.css,img.Cpp,img.javaScript{
 }
 form{
     border: rgba(16, 31, 27, 0.555) solid 5px;
-    border-radius: 30px;
+    border-radius: 10px;
     margin: 0 5vh;
     padding: 10px;
 }
 input{
-    border: springgreen solid 5px;
-    border-radius: 20px;
+    border: rgba(16, 31, 27, 0.555) solid 5px; solid 5px;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
     width: 90%;
     padding: 10px;
 }
@@ -158,6 +162,12 @@ h3{
 }
 #submit{
     width: 50%;
+    border-radius: 5px;
+}
+#submit:hover{
+    width: 50%;
     border-radius: 15px;
+    background-color: rgba(8, 240, 182, 0.555);
+    font-size: larger;
 }
 /* ================== */
