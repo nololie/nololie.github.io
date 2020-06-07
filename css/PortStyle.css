@@ -138,19 +138,18 @@ img.html,img.css,img.Cpp,img.javaScript{
 .contactMe h1{
     background-color: rgba(8, 240, 182, 0.555);
 }
+.caption{
+    display: none;
+    color: black;
+}
 #gmail:hover \ .gmail{
     display: inline;
 }
 #linkedin:hover \ .linkedin {
     display: inline;
-    grid-column-start: 2;
-    grid-column-end: 3;
 }
-.caption{
-    display: none;
-}
-#ig p{
-    display: none;
+#ig:hover \ .ig{
+    display: inline;
 }
 form{
     border: rgba(16, 31, 27, 0.555) solid 5px;
@@ -160,7 +159,7 @@ form{
 }
 input{
     border: rgba(16, 31, 27, 0.555) solid 5px;
-    border-radius: 30px;
+    border-radius: 20px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     width: 90%;
