@@ -139,8 +139,9 @@ img.html,img.css,img.Cpp,img.javaScript{
     background-color: rgba(8, 240, 182, 0.555);
 }
 .caption{
-    display: none;
+    font-size: small;
     color: black;
+    padding: 0;
 }
 #gmail:hover \ .gmail{
     display: inline;
