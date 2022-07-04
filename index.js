@@ -1,17 +1,21 @@
-function setGreeting() {   
-    var verbs = ["morning", "afternoon", "evening"];
+function setGreeting() {
     var hour = new Date().getHours();
-    console.log(hour)
     var verb = "";
-    
-    if (hour >= 05 && hour < 12){
-        verb = verbs[0]
-    }else if (hour >= 12 && hour < 17){
-        verb = verbs[1]
-    }else if (hour >=17 || hour < 05){
-        verb = verbs[2]
+
+    if (hour >= 00 && hour < 12) {
+        verb = "morning"
+    } else if (hour >= 12 && hour < 17) {
+        verb = "afternoon"
+    } else if (hour >= 17 || hour < 00) {
+        verb = "evening"
     }
-    console.log(verb)
-    var greeting = `Good ${verb}, my name is Lehlohonolo Lawrence Lefatle. Welcome to my portfolio site.`;
+    var greeting = `Good ${verb} I am Lehlohonolo Lefatle, a full-stack web developer. Welcome to my portfolio site.`;
     document.getElementsByClassName("greeting")[0].innerHTML = greeting;
 }
+
+function showForm() {
+    document.getElementsByTagName("form")[0].style.visibility = "visible";
+    document.getElementsByClassName("detailsHeading")[0].style.visibility = "hidden";
+}
+
+// How to send form data straight to email?

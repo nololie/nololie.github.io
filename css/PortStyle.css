@@ -1,169 +1,228 @@
-*{  
+* {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25px;
     list-style: none;
     text-decoration: none;
     text-align: center;
     margin: 0px;
     grid-gap: 5px;
-    color: white;
 }
-li{
+
+li {
     padding: 15px;
     font-weight: normal;
 }
-h1{
+
+h1 {
     font-size: 60px;
+    background-color: rgba(8, 240, 182, 0.555);
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
 }
+
 h2 {
-    padding: 40px 0 0 0;
     font-size: 40px;
     font-weight: bold;
 }
-p{
-    padding: 40px;
+
+p {
+    padding: 30px;
+    font-weight: 500;
 }
-section{
+
+section {
     margin: 0 1vh 2vh 1vh;
-    height: 88vh;
 }
 
 /* MOBILE */
 /* HOME section */
-.home{
+.home {
+    background-color: rgb(8 240 46 / 30%);
+    margin: 0 0 2vh 0;
+    border-radius: 10px;
+}
+
+.Overlay p {
+    font-weight: 500;
+}
+
+.Overlay {
     background: url('../nolo.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     margin-top: 0.5vh;
+    padding: 1.5vh;
+    border-radius: 10px;
 }
-.home h1{
-    padding-top: 5vh;
-}
-.home p{
-    font-weight: bolder;
-    font-size: 30px;
-}
-.home .Overlay{
-    background-color: rgba(24, 23, 23, 0.5);
-    height: 88vh;
-}
-.myNav{
+
+.myNav {
     position: sticky;
     top: 0;
     background-color: rgb(0, 0, 0);
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 5fr 1fr 1fr;
-    z-index: 1;
+    padding: 1vh;
 }
-.myNav h2{
-    padding: 0%;
+
+.myNav h1 {
     color: rgba(8, 240, 85, 0.918);
-    text-align: left;
+    text-align: center;
+    background-color: inherit;
 }
-.myNav a{
+
+.myNav a {
     display: block;
-    color: white;
-    border: 0.5px rgba(245, 245, 245, 0.801) solid;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
+    color: rgba(8, 240, 85, 0.918);
+    margin: 0 2vh;
 }
-.myNav a:hover{
-    background-color: rgba(8, 240, 182, 0.555);
+
+.myNav a:hover {
+    border-bottom: 1px rgb(253, 45, 45) solid;
+    color: rgb(253, 45, 45);
 }
+
 /* ================== */
 
 /* ABOUT section */
-.aboutMe{
+.aboutMe {
     border-radius: 10px;
-    background-color: rgba(8, 119, 91, 0.651);
-    padding: 10vh 0;
+    background-color: rgb(8 119 91 / 40%);
+    margin: 0;
 }
-.aboutMe h1, #myportfolio h1{
-    margin-bottom: 0;
-}
+
 /* ================== */
 
 /* SILLS section */
-.skills{
+.skills {
     background-color: rgba(8, 240, 46, 0.555);
+    border-radius: 10px;
 }
-.skills h1{
+
+.skills h1 {
     background-color: rgba(8, 240, 182, 0.555);
 }
-.skills h2{
+
+.skills h2 {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-.skills .formal{
+
+.skills .formal {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
 }
+
 .skills .formal p {
     font-size: xx-large;
     padding: 0;
 }
-p.html, p.javaScript{
+
+p.html,
+p.javaScript {
     float: right;
 }
-p.css, p.Cpp{
+
+p.css,
+p.Cpp {
     float: left;
 }
-img.html,img.css,img.Cpp,img.javaScript{
+
+img.html,
+img.css,
+img.Cpp,
+img.javaScript {
     vertical-align: middle;
 }
+
 /* ================== */
 
 /* PORTFOLIO section */
-#myportfolio{
+#myportfolio {
     border-radius: 10px;
     background-color: rgba(8, 119, 91, 0.651);
-    padding: 10vh 0;
 }
-#myportfolio h2{
+
+#myportfolio h2 {
     padding: 15px;
 }
-.websiteRepo{
+
+.websiteRepo {
     margin: 10px;
 }
+
 /* ================== */
 
 /* CONTACT section */
-.contactMe{
+.contactMe {
     background-color: rgba(8, 240, 46, 0.555);
-    display: grid;
+    border-radius: 10px;
 }
-.contactMe .formal{
-    display:  grid;
+
+.platform {
+    border: black solid;
+}
+
+.paddedcontent {
+    padding: 2vh;
+}
+
+.contactMe .formal {
+    display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
 }
-.contactMe h1{
-    background-color: rgba(8, 240, 182, 0.555);
+
+.contactMe .social {
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
-.caption{
+
+.leavedetails {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
+}
+
+.contactMe h1 {
+    background-color: rgba(8, 240, 182, 0.555);
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.caption {
     font-size: small;
     color: black;
     padding: 0;
 }
-#gmail:hover \ .gmail{
+
+#gmail:hover \ .gmail {
     display: inline;
 }
+
 #linkedin:hover \ .linkedin {
     display: inline;
 }
-#ig:hover \ .ig{
+
+#ig:hover \ .ig {
     display: inline;
 }
-form{
-    border: rgba(16, 31, 27, 0.555) solid 5px;
+
+.detailsHeading {
+    border: black solid;
+}
+
+.detailsHeading:hover {
+    background-color: black;
+    color: aqua;
+}
+
+form {
+    visibility: hidden;
+    border: rgba(70, 173, 146, 0.671) solid 5px;
     border-radius: 10px;
     margin: 0 5vh;
     padding: 10px;
 }
-input{
+
+input {
     border: rgba(16, 31, 27, 0.555) solid 5px;
     border-radius: 20px;
     border-top-right-radius: 0px;
@@ -171,17 +230,21 @@ input{
     width: 90%;
     padding: 10px;
 }
-.contactMe h2{
+
+.contactMe h2 {
     grid-column: 1/3;
 }
-#submit{
+
+#submit {
     width: 50%;
     border-radius: 5px;
 }
-#submit:hover{
+
+#submit:hover {
     width: 50%;
     border-radius: 15px;
     background-color: rgba(8, 240, 182, 0.555);
     font-size: larger;
 }
+
 /* ================== */
