@@ -5,51 +5,59 @@
     <title>NoloLie</title>
     <link href="css/PortStyle.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
     <script type="text/javaScript" src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
 <body onload="setGreeting()">
-    <div class="myNav">
-        <h1 class="siteName">Nololie</h1>
+    <div id="myNav" class="myNav">
+        <a href="./index.html">
+            <h1 class="siteName">Nololie</h1>
+        </a>
 
-        <a href="#myportfolio">View portfolio</a>
-        <a href="https://drive.google.com/file/d/1oBD4YwHtbKpNcPifyvQ9DLdJVu6NPDtb/view?usp=sharing"
-            target="blank">Download CV</a>
+        <div class="links">
+            <a id="link1" onclick="toggleMenu(this)" href="#myportfolio">My Projects</a>
+
+            <a id="link2" href="https://drive.google.com/file/d/1oBD4YwHtbKpNcPifyvQ9DLdJVu6NPDtb/view?usp=sharing"
+                target="blank">Curriculum Vitae</a>
+
+            <a id="link3" onclick="toggleMenu(this)" href="#skills">My skills</a>
+            <a href=""></a>
+        </div>
     </div>
 
     <div class="portfolio">
 
-        <section class="Overlay">
+        <section id="Overlay" class="Overlay">
 
-            <section class="home">
-                <div class="heading">
-                    <h1>WELCOME TO MY WORLD</h1>
-                </div>
+            <h1>WELCOME TO MY WORLD</h1>
 
-                <p class="greeting"></p>
-            </section>
+            <section id="home" class="home">
+                <img class="nolo" src="./Mr_Lefatle.png" alt="">
 
-            <section class="aboutMe">
-                <h1>ABOUT ME</h1>
+                <div class="greeting"></div>
 
-                <p>
-                    I am a young enthusiastic Full-Stack Web Developer chasing excellence each day and at the
-                    moment
-                    searching for new opportunities to grow my knowledge, unleash my potential and expand my
-                    experience.
-                    I am passionate about digital technology and what it can achieve for this world.
-                    I dream of inspiring a digital technology revolution to empower young Africans explore digital
-                    technology and use its power to change the world.
-                </p>
+                <section class="aboutMe">
+
+                    <h1>ABOUT ME</h1>
+
+                    <p>
+                        I am a young enthusiastic Full-Stack Web Developer chasing excellence each day and at the
+                        moment
+                        searching for new opportunities to grow my knowledge, unleash my potential and expand my
+                        experience.
+                        I am passionate about digital technology and what it can achieve for this world.
+                        I dream of inspiring a digital technology revolution to empower young Africans explore digital
+                        technology and use its power to change the world.
+                    </p>
+                </section>
+
             </section>
 
         </section>
 
-
-
-        <section class="skills">
+        <section id="skills" class="skills">
             <h1>MY SKILLS</h1>
 
             <div class="formal">
@@ -78,7 +86,7 @@
 
         </section>
 
-        <section id="myportfolio">
+        <section id="projects" class="myportfolio">
             <h1>MY PORTFOLIO</h1>
 
             <div class="websiteRepo">
@@ -86,7 +94,7 @@
                 <p>NoloLie was developed by me, it is my very first website.<br>Source code on my<a
                         href="https://github.com/nololie/nololie.github.io" target="blank"> GitHub</a>.</p>
                 <h2>Memory game</h2>
-                <p> <a href="https://nololie.github.io/memory-game/" target="blank">Play</a> the memory game I developed
+                <p> <a href="https://nololie.github.io/memory-game/" target="blank">Play</a>the memory game I developed
                     using pure DOM and javaScript.</p>
                 <h2>GitHub ropositories</h2>
                 <p>I present to you, work I have done as part of my jorney in learning Web Development at Umuzi
@@ -105,12 +113,12 @@
                     </h2>
 
                     <a id="gmail" href="mailto:lawrence.lefatle@gmail.com" target="blank">
-                        <img src="https://img.icons8.com/fluent/300/000000/gmail.png" /><br>
+                        <img src="https://img.icons8.com/fluent/100/000000/gmail.png" /><br>
                         <p class="caption gmail">lawrence.lefatle@gmail.com</p>
                     </a>
 
                     <a id="linkedin" href="https://www.linkedin.com/in/nolo-lefatle" target="blank">
-                        <img src="https://img.icons8.com/color/300/000000/linkedin.png" /><br>
+                        <img src="https://img.icons8.com/color/100/000000/linkedin.png" /><br>
                         <p class="caption linkedin">Lawrence Lefatle</p>
                     </a>
                 </div>
@@ -122,7 +130,7 @@
                     </h2>
 
                     <a id="ig" href="https://www.instagram.com/nololefatle/" target="blank">
-                        <img src="https://img.icons8.com/fluent/300/000000/instagram-new.png" /><br>
+                        <img src="https://img.icons8.com/fluent/100/000000/instagram-new.png" /><br>
                         <p class="caption ig">@lehlohonololefatle</p>
                     </a>
                 </div>

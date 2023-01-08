@@ -1,250 +1,59 @@
+html,
+body {
+    padding: 0;
+    background-color: rgba(147, 122, 255, 0.548);
+}
+
 * {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    list-style: none;
+    color: black;
     text-decoration: none;
+    padding: 10px;
+    place-content: center;
+    margin: 0;
     text-align: center;
-    margin: 0px;
-    grid-gap: 5px;
 }
 
-li {
-    padding: 15px;
-    font-weight: normal;
-}
-
-h1 {
-    font-size: 60px;
-    background-color: rgba(8, 240, 182, 0.555);
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-}
-
-h2 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-p {
-    padding: 30px;
-    font-weight: 500;
-}
-
-section {
-    margin: 0 1vh 2vh 1vh;
-}
-
-/* MOBILE */
-/* HOME section */
 .home {
-    background-color: rgb(8 240 46 / 30%);
-    margin: 0 0 2vh 0;
-    border-radius: 10px;
+    display: grid;
+    place-content: center;
 }
 
-.Overlay p {
-    font-weight: 500;
+.nolo {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    place-self: center;
 }
 
-.Overlay {
-    background: url('../nolo.jpg');
-    background-size: cover;
-    margin-top: 0.5vh;
-    padding: 1.5vh;
-    border-radius: 10px;
+.greeting {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center;
+}
+
+.portfolio {
+    position: absolute;
+    top: 18vh;
+}
+
+.aboutMe {
+    grid-column: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    place-self: center;
 }
 
 .myNav {
-    position: sticky;
-    top: 0;
-    background-color: rgb(0, 0, 0);
-    padding: 1vh;
+    background-color: rgba(0, 173, 182, 0.342);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1;
 }
 
-.myNav h1 {
-    color: rgba(8, 240, 85, 0.918);
-    text-align: center;
-    background-color: inherit;
-}
-
-.myNav a {
-    display: block;
-    color: rgba(8, 240, 85, 0.918);
-    margin: 0 2vh;
-}
-
-.myNav a:hover {
-    border-bottom: 1px rgb(253, 45, 45) solid;
-    color: rgb(253, 45, 45);
-}
-
-/* ================== */
-
-/* ABOUT section */
-.aboutMe {
-    border-radius: 10px;
-    background-color: rgb(8 119 91 / 40%);
-    margin: 0;
-}
-
-/* ================== */
-
-/* SILLS section */
-.skills {
-    background-color: rgba(8, 240, 46, 0.555);
-    border-radius: 10px;
-}
-
-.skills h1 {
-    background-color: rgba(8, 240, 182, 0.555);
-}
-
-.skills h2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.skills .formal {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-}
-
-.skills .formal p {
-    font-size: xx-large;
-    padding: 0;
-}
-
-p.html,
-p.javaScript {
-    float: right;
-}
-
-p.css,
-p.Cpp {
-    float: left;
-}
-
-img.html,
-img.css,
-img.Cpp,
-img.javaScript {
-    vertical-align: middle;
-}
-
-/* ================== */
-
-/* PORTFOLIO section */
-#myportfolio {
-    border-radius: 10px;
-    background-color: rgba(8, 119, 91, 0.651);
-}
-
-#myportfolio h2 {
-    padding: 15px;
-}
-
-.websiteRepo {
-    margin: 10px;
-}
-
-/* ================== */
-
-/* CONTACT section */
+.skills,
+.myportfolio,
 .contactMe {
-    background-color: rgba(8, 240, 46, 0.555);
-    border-radius: 10px;
+    display: none;
 }
-
-.platform {
-    border: black solid;
-}
-
-.paddedcontent {
-    padding: 2vh;
-}
-
-.contactMe .formal {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-}
-
-.contactMe .social {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.leavedetails {
-    grid-column-start: 3;
-    grid-column-end: -1;
-    grid-row-start: 2;
-    grid-row-end: -1;
-}
-
-.contactMe h1 {
-    background-color: rgba(8, 240, 182, 0.555);
-    grid-column-start: 1;
-    grid-column-end: -1;
-}
-
-.caption {
-    font-size: small;
-    color: black;
-    padding: 0;
-}
-
-#gmail:hover \ .gmail {
-    display: inline;
-}
-
-#linkedin:hover \ .linkedin {
-    display: inline;
-}
-
-#ig:hover \ .ig {
-    display: inline;
-}
-
-.detailsHeading {
-    border: black solid;
-}
-
-.detailsHeading:hover {
-    background-color: black;
-    color: aqua;
-}
-
-form {
-    visibility: hidden;
-    border: rgba(70, 173, 146, 0.671) solid 5px;
-    border-radius: 10px;
-    margin: 0 5vh;
-    padding: 10px;
-}
-
-input {
-    border: rgba(16, 31, 27, 0.555) solid 5px;
-    border-radius: 20px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    width: 90%;
-    padding: 10px;
-}
-
-.contactMe h2 {
-    grid-column: 1/3;
-}
-
-#submit {
-    width: 50%;
-    border-radius: 5px;
-}
-
-#submit:hover {
-    width: 50%;
-    border-radius: 15px;
-    background-color: rgba(8, 240, 182, 0.555);
-    font-size: larger;
-}
-
-/* ================== */
