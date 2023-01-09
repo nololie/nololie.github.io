@@ -17,28 +17,29 @@
         </a>
 
         <div class="links">
-            <a id="link1" onclick="toggleMenu(this)" href="#myportfolio">My Projects</a>
-
             <a id="link2" href="https://drive.google.com/file/d/1oBD4YwHtbKpNcPifyvQ9DLdJVu6NPDtb/view?usp=sharing"
                 target="blank">Curriculum Vitae</a>
 
-            <a id="link3" onclick="toggleMenu(this)" href="#skills">My skills</a>
-            <a href=""></a>
+            <a id="skills-item" class="link" onclick="toggleMenu(this)" href="#skills">My skills</a>
+
+            <a id="portfolio-item" class="link" onclick="toggleMenu(this)" href="#myportfolio">My Projects</a>
+
+            <a id="contact-item" class="link" onclick="toggleMenu(this)" href="#contactMe">Hit me up</a>
         </div>
     </div>
 
     <div class="portfolio">
 
-        <section id="Overlay" class="Overlay">
+        <section id="landing" class="landing">
 
             <h1>WELCOME TO MY WORLD</h1>
 
-            <section id="home" class="home">
+            <div id="home" class="home">
                 <img class="nolo" src="./Mr_Lefatle.png" alt="">
 
                 <div class="greeting"></div>
 
-                <section class="aboutMe">
+                <div class="aboutMe">
 
                     <h1>ABOUT ME</h1>
 
@@ -51,13 +52,13 @@
                         I dream of inspiring a digital technology revolution to empower young Africans explore digital
                         technology and use its power to change the world.
                     </p>
-                </section>
+                </div>
 
-            </section>
+            </div>
 
         </section>
 
-        <section id="skills" class="skills">
+        <section id="skills" class="skills skills-item">
             <h1>MY SKILLS</h1>
 
             <div class="formal">
@@ -86,7 +87,7 @@
 
         </section>
 
-        <section id="projects" class="myportfolio">
+        <section id="projects" class="myportfolio portfolio-item">
             <h1>MY PORTFOLIO</h1>
 
             <div class="websiteRepo">
@@ -102,7 +103,7 @@
             </div>
         </section>
 
-        <section class="contactMe">
+        <section id="contactMe" class="contactMe contact-item">
             <h1>CONTACT ME @</h1>
 
             <div class="paddedcontent">

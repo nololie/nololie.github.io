@@ -1,3 +1,5 @@
+const { links } = require("express/lib/response");
+
 function setGreeting() {
     var hour = new Date().getHours();
     var verb = "";
@@ -15,20 +17,22 @@ function setGreeting() {
 
 function toggleMenu(e) {
 
-    document.getElementById("projects").style.display = "none";
-    document.getElementById("Overlay").style.display = "none";
-    document.getElementById("skills").style.display = "none";
+    const sections = document.getElementsByTagName("section")
 
-    document.getElementById("link1").style.display = "inline";
-    document.getElementById("link3").style.display = "inline";
-
-    if (e.id == "link1") {
-        document.getElementById("projects").style.display = "block";
-        document.getElementById("link1").style.display = "none";
-    } else if (e.id == "link3") {
-        document.getElementById("skills").style.display = "block";
-        document.getElementById("link3").style.display = "none";
+    for (i in sections) {
+        if (i < 4) sections[i].style.display = "none";
     }
+
+    const links = document.getElementsByClassName("link")
+
+    for (i in links) {
+        if (i < 4 && i !== 2) {
+            links[i].style.display = "inline"
+        }
+    }
+
+    e.style.display = "none"
+    document.getElementsByClassName(e.id)[0].style.display = "block"
 
 }
 

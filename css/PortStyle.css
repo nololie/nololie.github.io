@@ -28,19 +28,19 @@ body {
 .greeting {
     grid-column: 1;
     grid-row: 1;
-    place-self: center;
 }
 
 .portfolio {
     position: absolute;
     top: 18vh;
+    left: 0;
+    right: 0;
 }
 
 .aboutMe {
     grid-column: 1;
     grid-row-start: 2;
     grid-row-end: 3;
-    place-self: center;
 }
 
 .myNav {
@@ -50,6 +50,11 @@ body {
     right: 0px;
     left: 0px;
     z-index: 1;
+}
+
+.myNav h1 {
+    margin-block: 0;
+    padding: 0;
 }
 
 .skills,
