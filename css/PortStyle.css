@@ -62,3 +62,51 @@ body {
 .contactMe {
     display: none;
 }
+
+.categories {
+    grid-template-columns: auto auto;
+    display: grid;
+}
+
+.contacts {
+    grid-template-columns: auto auto;
+}
+
+.contacts .formal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.formal {
+    grid-template-rows: auto auto;
+    display: grid;
+    grid-column-start: 1;
+}
+
+.social {
+    grid-template-rows: auto auto;
+    display: grid;
+    grid-column-start: 2;
+}
+
+.formal h2,
+.social h2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: block;
+}
+
+.skills-icons {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+form {
+    display: none;
+}
+
+.detailsHeading {
+    background-color: blueviolet;
+    border: 5px solid burlywood;
+}
