@@ -11,12 +11,21 @@
 
 
 <body onload="setGreeting()">
-    <div class="myNav">
-        <h1 class="siteName">Nololie</h1>
+    <div id="myNav" class="myNav">
+        <a href="./index.html">
+            <h1 class="siteName">Nololie</h1>
+        </a>
 
-        <a href="#myportfolio">View portfolio</a>
-        <a href="https://drive.google.com/file/d/1oBD4YwHtbKpNcPifyvQ9DLdJVu6NPDtb/view?usp=sharing"
-            target="blank">Download CV</a>
+        <div class="links">
+            <a id="link2" href="https://drive.google.com/file/d/1oBD4YwHtbKpNcPifyvQ9DLdJVu6NPDtb/view?usp=sharing"
+                target="blank">Curriculum Vitae</a>
+
+            <a id="skills-item" class="link" onclick="toggleMenu(this)" href="#skills">My skills</a>
+
+            <a id="portfolio-item" class="link" onclick="toggleMenu(this)" href="#myportfolio">My Projects</a>
+
+            <a id="contact-item" class="link" onclick="toggleMenu(this)" href="#contactMe">Hit me up</a>
+        </div>
     </div>
 
     <div class="portfolio">
