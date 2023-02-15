@@ -32,7 +32,7 @@ body {
 
 .portfolio {
     position: absolute;
-    top: 18vh;
+    top: 15vh;
     left: 0;
     right: 0;
 }
@@ -44,12 +44,39 @@ body {
 }
 
 .myNav {
-    background-color: rgba(0, 173, 182, 0.342);
+    background-color: black;
+    color: rgb(0, 255, 128);
     position: fixed;
-    top: 0px;
     right: 0px;
+    top: 0px;
     left: 0px;
     z-index: 1;
+    height: 11%;
+}
+
+.links {
+    padding: 5px 0px 0px 0px;
+}
+
+.link {
+    font-size: medium;
+    font-weight: bold;
+    padding: 2px 10px;
+}
+
+.wayHome {
+    padding: 0;
+}
+
+.myNav a,
+.myNav h1 {
+    color: rgb(0, 255, 42);
+}
+
+.link:hover {
+    font-size: large;
+    color: red;
+    border-bottom: 1.5px solid red;
 }
 
 .myNav h1 {
@@ -70,6 +97,7 @@ body {
 
 .contacts {
     grid-template-columns: auto auto;
+    background-color: rgba(0, 255, 128, 0.534);
 }
 
 .contacts .formal {
@@ -94,6 +122,10 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
     display: block;
+}
+
+.skills {
+    background-color: rgba(0, 255, 128, 0.534);
 }
 
 .skills-icons {
