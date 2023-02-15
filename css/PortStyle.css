@@ -46,6 +46,7 @@ body {
 .myNav {
     background-color: black;
     color: rgb(0, 255, 128);
+    letter-spacing: 1.5px;
     position: fixed;
     right: 0px;
     top: 0px;
@@ -55,7 +56,8 @@ body {
 }
 
 .links {
-    padding: 5px 0px 0px 0px;
+    padding: 8px 0px 0px 0px;
+    letter-spacing: 1px;
 }
 
 .link {
@@ -97,7 +99,6 @@ body {
 
 .contacts {
     grid-template-columns: auto auto;
-    background-color: rgba(0, 255, 128, 0.534);
 }
 
 .contacts .formal {
@@ -124,8 +125,9 @@ body {
     display: block;
 }
 
-.skills {
-    background-color: rgba(0, 255, 128, 0.534);
+.skills,
+.contacts {
+    background-color: rgba(21, 255, 0, 0.466);
 }
 
 .skills-icons {
