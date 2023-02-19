@@ -1,21 +1,22 @@
-html,
-body {
-    padding: 0;
-    background-color: rgba(147, 122, 255, 0.548);
-}
-
 * {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    place-content: center;
     margin: 0;
+    padding: 0;
+    color: rgb(0, 255, 42);
+    text-decoration: none;
     text-align: center;
 }
 
 .home {
     display: grid;
-    place-content: center;
+}
+
+.portfolio {
+    position: fixed;
+    top: 15vh;
+    height: 83vh;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 0, 53);
 }
 
 .nolo {
@@ -30,13 +31,6 @@ body {
     grid-row: 1;
 }
 
-.portfolio {
-    position: absolute;
-    top: 15vh;
-    left: 0;
-    right: 0;
-}
-
 .aboutMe {
     grid-column: 1;
     grid-row-start: 2;
@@ -45,50 +39,50 @@ body {
 
 .myNav {
     background-color: black;
-    color: rgb(0, 255, 128);
-    letter-spacing: 1.5px;
-    position: fixed;
-    right: 0px;
+    letter-spacing: 2px;
+    position: sticky;
     top: 0px;
-    left: 0px;
-    z-index: 1;
-    height: 11%;
+    width: 100%;
+    height: 17vh;
 }
 
 .links {
-    padding: 8px 0px 0px 0px;
-    letter-spacing: 1px;
+    padding: 5px;
+    letter-spacing: 3px;
 }
 
-.link {
-    font-size: medium;
+.nav-link {
+    font-size: large;
     font-weight: bold;
     padding: 2px 10px;
 }
 
-.wayHome {
-    padding: 0;
-}
-
-.myNav a,
 .myNav h1 {
     color: rgb(0, 255, 42);
+    font-size: xxx-large;
 }
 
-.link:hover {
-    font-size: large;
+li {
+    display: inline;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid rgb(0, 255, 42);
+}
+
+.nav-link a:hover {
     color: red;
-    border-bottom: 1.5px solid red;
 }
 
 .myNav h1 {
     margin-block: 0;
-    padding: 0;
+    padding: 2px;
+    font-size: xxx-large;
 }
 
-.skills,
-.myportfolio,
-.contactMe {
+#skills,
+#projects,
+#contactMe {
     display: none;
 }
 
@@ -125,15 +119,19 @@ body {
     display: block;
 }
 
-.skills,
-.contacts {
-    background-color: rgba(21, 255, 0, 0.466);
+#skills,
+.contactMe {
+    background-color: rgba(21, 255, 0, 0.623);
 }
 
 .skills-icons {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+.skills h2 {
+    grid-column-start: 0;
+    grid-column-end: 1;
 }
 
 form {

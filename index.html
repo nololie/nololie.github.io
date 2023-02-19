@@ -11,27 +11,38 @@
 </head>
 
 <body onload="setGreeting()">
-    <div id="myNav" class="myNav">
+    <nav id="myNav" class="myNav">
         <a class="wayHome" href="./index.html">
             <h1 class="siteName">Nololie</h1>
         </a>
 
-        <div class="links">
-            <a id="cv" class="link"
-                href="https://drive.google.com/file/d/1oBD4YwHtbKpNcPifyvQ9DLdJVu6NPDtb/view?usp=sharing"
-                target="blank">Curriculum Vitae</a>
+        <ul class="links">
+            <li id="landing-item" class="nav-link" onclick="toggleMenu(this)">
+                <a class="innerNav" href="#landing">Home</a>
+            </li>
 
-            <a id="skills-item" class="link" onclick="toggleMenu(this)" href="#skills">My skills</a>
+            <li id="skills-item" class="nav-link" onclick="toggleMenu(this)">
+                <a class="innerNav" href="#skills">Skills</a>
+            </li>
 
-            <a id="portfolio-item" class="link" onclick="toggleMenu(this)" href="#myportfolio">My Projects</a>
+            <li id="portfolio-item" class="nav-link" onclick="toggleMenu(this)">
+                <a class="innerNav" href="#myportfolio">Projects</a>
+            </li>
 
-            <a id="contact-item" class="link" onclick="toggleMenu(this)" href="#contactMe">Hit me up</a>
-        </div>
-    </div>
+            <li class="nav-link">
+                <a id="cv" href="https://drive.google.com/file/d/1oBD4YwHtbKpNcPifyvQ9DLdJVu6NPDtb/view?usp=sharing"
+                    target="blank">Resume</a>
+            </li>
+
+            <li id="contact-item" class="nav-link" onclick="toggleMenu(this)">
+                <a class="innerNav" href="#contactMe">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
     <div class="portfolio">
 
-        <section id="landing" class="landing">
+        <section id="landing" class="landing landing-item">
 
             <h1>WELCOME TO MY WORLD</h1>
 
@@ -63,8 +74,8 @@
             <h1>MY SKILLS</h1>
 
             <div class="categories">
-                <h2 class="heads">Developing skills</h2>
-                <div class="formal skills-icons">
+                <div id="skills-icons" class="formal">
+                    <h2 class="heads">Developing skills</h2>
                     <div>
                         <p class="html">HTML<img class="html"
                                 src="https://img.icons8.com/color/200/000000/html-5.png" />
@@ -83,13 +94,11 @@
                     </div>
                 </div>
 
-                <h2 class="heads">Other skills</h2>
                 <div class="social">
+                    <h2 class="heads">Other skills</h2>
                     <p>Microsoft office(Word, Exel and Powerpoint)</p>
                 </div>
             </div>
-
-
         </section>
 
         <section id="projects" class="myportfolio portfolio-item">
