@@ -11,43 +11,47 @@
 </head>
 
 <body onload="setGreeting()">
-    <div id="myNav" id="myNav" class="myNav">
-        <a href="./index.html">
-            <a href="./index.html">
-                <h1 class="siteName">Nololie</h1>
-            </a>
-
-            <div class="links">
-                <a id="link1" onclick="toggleMenu(this)" href="#myportfolio">My Projects</a>
-
-                <a id="link2" href="https://drive.google.com/file/d/1oBD4YwHtbKpNcPifyvQ9DLdJVu6NPDtb/view?usp=sharing"
-                    target="blank">Curriculum Vitae</a>
+    <nav id="myNav" class="myNav">
+        <a class="wayHome" href="#landing" onclick="setGreeting()">
+            <h1 class="siteName">Nololie</h1>
         </a>
 
-        <div class="links">
-            <a id="link2" href="https://drive.google.com/file/d/1oBD4YwHtbKpNcPifyvQ9DLdJVu6NPDtb/view?usp=sharing"
-                target="blank">Curriculum Vitae</a>
+        <ul class="links">
+            <li id="landing-item" class="nav-link" onclick="toggleMenu(this); setGreeting()">
+                <a class="innerNav" href="#landing">Home</a>
+            </li>
 
-            <a id="skills-item" class="link" onclick="toggleMenu(this)" href="#skills">My skills</a>
+            <li id="skills-item" class="nav-link" onclick="toggleMenu(this)">
+                <a class="innerNav" href="#skills">Skills</a>
+            </li>
 
-            <a id="portfolio-item" class="link" onclick="toggleMenu(this)" href="#myportfolio">My Projects</a>
+            <li id="portfolio-item" class="nav-link" onclick="toggleMenu(this)">
+                <a class="innerNav" href="#myportfolio">Projects</a>
+            </li>
 
-            <a id="contact-item" class="link" onclick="toggleMenu(this)" href="#contactMe">Hit me up</a>
-        </div>
-    </div>
+            <li class="nav-link">
+                <a id="cv" href="https://drive.google.com/file/d/1oBD4YwHtbKpNcPifyvQ9DLdJVu6NPDtb/view?usp=sharing"
+                    target="blank">Resume</a>
+            </li>
+
+            <li id="contact-item" class="nav-link" onclick="toggleMenu(this)">
+                <a class="innerNav" href="#contactMe">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
     <div class="portfolio">
 
-        <section id="Overlay" class="Overlay">
+        <section id="landing" class="landing landing-item">
 
             <h1>WELCOME TO MY WORLD</h1>
 
-            <section id="home" class="home">
+            <div id="home" class="home">
                 <img class="nolo" src="./Mr_Lefatle.png" alt="">
 
                 <div class="greeting"></div>
 
-                <section class="aboutMe">
+                <div class="aboutMe">
 
                     <h1>ABOUT ME</h1>
 
@@ -60,42 +64,44 @@
                         I dream of inspiring a digital technology revolution to empower young Africans explore digital
                         technology and use its power to change the world.
                     </p>
-                </section>
+                </div>
 
-            </section>
+            </div>
 
         </section>
 
-        <section id="skills" class="skills">
+        <section id="skills" class="skills skills-item">
             <h1>MY SKILLS</h1>
 
-            <div class="formal">
-                <h2 class="heads">Developing skills</h2>
-                <div>
-                    <p class="html">HTML<img class="html" src="https://img.icons8.com/color/200/000000/html-5.png" />
-                    </p>
+            <div class="categories">
+                <div id="skills-icons" class="formal">
+                    <h2 class="heads">Developing skills</h2>
+                    <div>
+                        <p class="html">HTML<img class="html"
+                                src="https://img.icons8.com/color/200/000000/html-5.png" />
+                        </p>
+                    </div>
+                    <div>
+                        <p class="css"><img class="css" src="https://img.icons8.com/color/200/000000/css3.png" />CSS</p>
+                    </div>
+                    <div>
+                        <p class="javaScript">JavaScript<img class="javaScript"
+                                src="https://img.icons8.com/color/200/000000/javascript-logo-1.png" /></p>
+                    </div>
+                    <div>
+                        <p class="Cpp"><img class="Cpp"
+                                src="https://img.icons8.com/color/200/000000/c-plus-plus-logo.png" />C++</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="css"><img class="css" src="https://img.icons8.com/color/200/000000/css3.png" />CSS</p>
-                </div>
-                <div>
-                    <p class="javaScript">JavaScript<img class="javaScript"
-                            src="https://img.icons8.com/color/200/000000/javascript-logo-1.png" /></p>
-                </div>
-                <div>
-                    <p class="Cpp"><img class="Cpp"
-                            src="https://img.icons8.com/color/200/000000/c-plus-plus-logo.png" />C++</p>
+
+                <div class="social">
+                    <h2 class="heads">Other skills</h2>
+                    <p>Microsoft office(Word, Exel and Powerpoint)</p>
                 </div>
             </div>
-
-            <div class="social">
-                <h2 class="heads">Other skills</h2>
-                <p>Microsoft office(Word, Exel and Powerpoint)</p>
-            </div>
-
         </section>
 
-        <section id="projects" class="myportfolio">
+        <section id="projects" class="myportfolio portfolio-item">
             <h1>MY PORTFOLIO</h1>
 
             <div class="websiteRepo">
@@ -111,10 +117,10 @@
             </div>
         </section>
 
-        <section class="contactMe">
+        <section id="contactMe" class="contactMe contact-item">
             <h1>CONTACT ME @</h1>
 
-            <div class="paddedcontent">
+            <div class="categories contacts">
                 <!-- Formal platforms -->
                 <div class="formal platform">
                     <h2 class="heads">
@@ -131,7 +137,7 @@
                         <p class="caption linkedin">Lawrence Lefatle</p>
                     </a>
                 </div>
-                <br>
+
                 <!-- Social platforms -->
                 <div class="social platform">
                     <h2 class="heads">
@@ -143,7 +149,7 @@
                         <p class="caption ig">@lehlohonololefatle</p>
                     </a>
                 </div>
-                <br>
+
                 <div class="leavedetails">
                     <h2 id="detailsHead" class="detailsHeading" onclick="showForm()">
                         Email me your details and let me get back to you.

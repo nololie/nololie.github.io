@@ -1,21 +1,23 @@
-html,
-body {
-    padding: 0;
-    background-color: rgba(147, 122, 255, 0.548);
-}
-
 * {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    place-content: center;
     margin: 0;
+    padding: 0;
+    color: rgb(0, 255, 42);
+    text-decoration: none;
     text-align: center;
 }
 
 .home {
     display: grid;
-    place-content: center;
+    padding: 70px;
+}
+
+.portfolio {
+    position: fixed;
+    top: 15vh;
+    height: 83vh;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 0, 53);
 }
 
 .nolo {
@@ -25,35 +27,119 @@ body {
     place-self: center;
 }
 
+.myNav {
+    background-color: black;
+    letter-spacing: 2px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 17vh;
+}
+
+
+.links {
+    padding: 5px;
+    letter-spacing: 3px;
+}
+
+.nav-link {
+    font-size: large;
+    font-weight: bold;
+    padding: 2px 10px;
+}
+
+.myNav h1 {
+    color: rgb(0, 255, 42);
+    font-size: xxx-large;
+}
+
+li {
+    display: inline;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid rgb(0, 255, 42);
+}
+
+.nav-link a:hover {
+    color: red;
+}
+
+.myNav h1 {
+    margin-block: 0;
+    padding: 2px;
+    font-size: xxx-large;
+}
+
 .greeting {
     grid-column: 1;
     grid-row: 1;
-    place-self: center;
-}
-
-.portfolio {
-    position: absolute;
-    top: 18vh;
 }
 
 .aboutMe {
     grid-column: 1;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    place-self: center;
+    grid-row: 2;
 }
 
-.myNav {
-    background-color: rgba(0, 173, 182, 0.342);
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    z-index: 1;
-}
-
-.skills,
-.myportfolio,
-.contactMe {
+#skills,
+#projects,
+#contactMe {
     display: none;
+}
+
+.categories {
+    grid-template-columns: auto auto;
+    display: grid;
+}
+
+.contacts {
+    grid-template-columns: auto auto;
+}
+
+.contacts .formal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.formal {
+    grid-template-rows: auto auto;
+    display: grid;
+    grid-column-start: 1;
+}
+
+.social {
+    grid-template-rows: auto auto;
+    display: grid;
+    grid-column-start: 2;
+}
+
+.formal h2,
+.social h2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: block;
+}
+
+#skills,
+.contactMe {
+    background-color: rgba(21, 255, 0, 0.623);
+}
+
+.skills-icons {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+.skills h2 {
+    grid-column-start: 0;
+    grid-column-end: 1;
+}
+
+form {
+    display: none;
+}
+
+.detailsHeading {
+    background-color: blueviolet;
+    border: 5px solid burlywood;
 }
