@@ -12,12 +12,12 @@
 
 <body onload="setGreeting()">
     <nav id="myNav" class="myNav">
-        <a class="wayHome" href="./index.html">
+        <a class="wayHome" href="#landing" onclick="setGreeting()">
             <h1 class="siteName">Nololie</h1>
         </a>
 
         <ul class="links">
-            <li id="landing-item" class="nav-link" onclick="toggleMenu(this)">
+            <li id="landing-item" class="nav-link" onclick="toggleMenu(this); setGreeting()">
                 <a class="innerNav" href="#landing">Home</a>
             </li>
 
