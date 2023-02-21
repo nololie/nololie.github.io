@@ -1,9 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    color: rgb(0, 255, 42);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-align: center;
+    font-size: large;
 }
 
 .home {
@@ -17,7 +18,9 @@
     height: 83vh;
     width: 100%;
     padding: 10px;
-    background-color: rgb(0, 0, 53);
+    background-image: url(/pexels-johannes-plenio-1103970.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nolo {
@@ -28,7 +31,7 @@
 }
 
 .myNav {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     letter-spacing: 2px;
     position: sticky;
     top: 0px;
@@ -61,6 +64,10 @@ li {
     border-bottom: 2px solid rgb(0, 255, 42);
 }
 
+.nav-link a {
+    color: rgb(0, 255, 42);
+}
+
 .nav-link a:hover {
     color: red;
 }
@@ -86,6 +93,7 @@ li {
 #contactMe {
     display: none;
 }
+
 
 .categories {
     grid-template-columns: auto auto;
@@ -120,19 +128,22 @@ li {
     display: block;
 }
 
-#skills,
-.contactMe {
-    background-color: rgba(21, 255, 0, 0.623);
-}
-
 .skills-icons {
     grid-template-columns: 1fr 1fr;
     display: grid;
 }
 
-.skills h2 {
-    grid-column-start: 0;
-    grid-column-end: 1;
+#skills-icons {
+    display: grid
+}
+
+.dev-skills-heading {
+    /* grid-column: 0 1;
+    grid-row: 0 1; */
+}
+
+.categories {
+    padding: 30px;
 }
 
 form {
