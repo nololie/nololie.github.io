@@ -1,5 +1,3 @@
-const { links } = require("express/lib/response")
-
 function setGreeting() {
     var hour = new Date().getHours();
     var verb = "";
@@ -25,12 +23,11 @@ function toggleMenu(e) {
     }
 
     // display the content section of the recently clicked link
-    document.getElementsByClassName(e.id)[0].style.display = "inline";
+    document.getElementsByClassName(e.id)[0].style.display = "block";
 
     // reset the active  content sections
     const links = document.getElementsByClassName("innerNav");
     for (const i in links) {
-        console.log(links[i])
         links[i].style = "border-bottom: none";
     }
 
