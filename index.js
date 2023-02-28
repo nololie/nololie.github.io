@@ -1,3 +1,8 @@
+function myFunction(x) {
+    x.classList.toggle("change");
+    document.getElementById("links").style.display = "block"
+}
+
 function setGreeting() {
     var hour = new Date().getHours();
     var verb = "";
