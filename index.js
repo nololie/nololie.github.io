@@ -1,6 +1,14 @@
 function myFunction(x) {
     x.classList.toggle("change");
-    document.getElementById("links").style.display = "block"
+
+    console.log(document.getElementById("links").style)
+    if ((document.getElementById("links").style.display == "none") | (document.getElementById("links").style.display == "")) {
+        document.getElementById("links").style.display = "block";
+        alert("display")
+    } else {
+        document.getElementById("links").style.display = "none";
+        alert("hide")
+    }
 }
 
 function setGreeting() {
