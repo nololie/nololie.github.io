@@ -1,23 +1,24 @@
 function myFunction(x) {
     x.classList.toggle("change");
 
-    console.log(document.getElementById("links").style)
-    if ((document.getElementById("links").style.display == "none") | (document.getElementById("links").style.display == "")) {
-        document.getElementById("links").style.display = "block";
+    //if we are not displaying the menu icon...... we shall display links
+    if (x.classList[1] != "change") {
+        document.getElementById("links").style.display = "none"
     } else {
-        document.getElementById("links").style.display = "none";
+        document.getElementById("links").style.display = "block"
     }
+
 }
 
 function setGreeting() {
     var hour = new Date().getHours();
     var verb = "";
 
-    if (hour >= 00 && hour < 12) {
+    if (hour >= 0 && hour < 12) {
         verb = "morning";
     } else if (hour >= 12 && hour < 17) {
         verb = "afternoon";
-    } else if (hour >= 17 || hour < 00) {
+    } else if (hour >= 17 || hour < 0) {
         verb = "evening";
     }
     var greeting = `<p>Good ${verb} and welcome to my portfolio site. I am Lehlohonolo Lawrence Lefatle, a full-stack web developer.</p>`;
@@ -25,6 +26,11 @@ function setGreeting() {
 }
 
 function toggleMenu(e) {
+
+    //Call myFunction for the menu icon toggle on mobile view
+    if (document.getElementsByClassName("change").length != 0) {
+        myFunction(document.getElementsByClassName("container")[0]);
+    }
 
     const sections = document.getElementsByTagName("section");
 
