@@ -12,16 +12,52 @@
     padding: 70px;
 }
 
+p {
+    font-size: x-large;
+}
+
 .portfolio {
     position: fixed;
     top: 15vh;
     height: 90vh;
-    padding: 15px 0 15px 0;
+    padding: 50px 10px;
     background-image: url(/pexels-johannes-plenio-1103970.jpg);
     background-size: cover;
     width: 100%;
+}
+
+#nololie {
+    grid-area: w;
+    width: fit-content;
+    padding: 5vh;
+    border: solid yellow;
+    border-radius: 2%;
+}
+
+#memoryGame {
+    grid-area: g;
+    width: fit-content;
+    padding: 5vh;
+    border: solid yellow;
+}
+
+#otherProjects {
+    grid-area: o;
+    width: fit-content;
+    padding: 5vh;
+    border: solid yellow;
+}
+
+.projects {
+    grid-template-areas: 'w g o';
+    gap: 10px;
     display: grid;
-    place-content: center;
+}
+
+
+#projects .websiteRepo,
+.websiteRepo p {
+    padding: 30px 0;
 }
 
 .nolo {
@@ -39,7 +75,6 @@
     width: 100%;
     height: 15vh;
 }
-
 
 .links {
     padding: 5px;
@@ -99,13 +134,12 @@ li {
 #projects,
 #contactMe {
     display: none;
-    place-self: center;
 }
-
 
 .categories {
     grid-template-columns: auto auto;
     display: grid;
+    padding: 30px;
 }
 
 .contacts {
@@ -143,10 +177,6 @@ li {
 
 #skills-icons {
     display: grid
-}
-
-.categories {
-    padding: 30px;
 }
 
 form {
