@@ -14,50 +14,43 @@
 
 p {
     font-size: x-large;
+    font-weight: 200;
 }
 
 .portfolio {
     position: fixed;
     top: 15vh;
     height: 90vh;
-    padding: 50px 10px;
+    padding: 4%;
     background-image: url(/pexels-johannes-plenio-1103970.jpg);
     background-size: cover;
-    width: 100%;
 }
 
-#nololie {
-    grid-area: w;
-    width: fit-content;
+.project {
+    border-radius: 20% 30%;
+    min-width: 300px;
     padding: 5vh;
-    border: solid yellow;
-    border-radius: 2%;
+    border: solid red;
+    margin: 5% 0;
 }
 
-#memoryGame {
-    grid-area: g;
-    width: fit-content;
-    padding: 5vh;
-    border: solid yellow;
+.project:hover {
+    background-color: lawngreen;
 }
 
-#otherProjects {
-    grid-area: o;
-    width: fit-content;
-    padding: 5vh;
-    border: solid yellow;
+.project p {
+    padding: 3% 0;
 }
 
 .projects {
-    grid-template-areas: 'w g o';
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1%;
     display: grid;
 }
 
-
 #projects .websiteRepo,
 .websiteRepo p {
-    padding: 30px 0;
+    padding: auto 0;
 }
 
 .nolo {
@@ -190,6 +183,20 @@ form {
 
 /* Mobile view */
 @media screen and (max-width: 767px) {
+
+
+    .project {
+        border-radius: 2%;
+        min-width: 300px;
+        padding: 5vh;
+        border: solid red;
+        margin: 5% 0;
+    }
+
+    .projects {
+        display: block;
+    }
+
     #myNav {
         height: auto;
         display: grid;
