@@ -159,6 +159,12 @@ form {
         background-size: cover;
     }
 
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5%;
+    }
+
     .project {
         border-radius: 4%;
         padding: 5vh;
