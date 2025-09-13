@@ -22,22 +22,20 @@ body {
 
 /* Navigation */
 .navbar {
+  padding: 0rem 2rem;
+  /* background: linear-gradient(100deg, #085846, #3300ff); */
   position: fixed;      /* keeps it always visible */
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(100deg, #00836483, #3300ff43);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   z-index: 1000;        /* ensures it’s above other content */
 }
 
 .navbar ul {
-  background: linear-gradient(100deg, #008364, #3300ffac);
   display: flex;
   justify-content: center;
   gap: 2rem;
   list-style: none;
-  margin: 0;
   padding: 1rem 0;
 }
 
@@ -58,7 +56,8 @@ section {
 }
 
 
-.hero h1 {
+.hero-content h1 {
+  padding-top: 2rem;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -143,8 +142,7 @@ section {
 }
 
 .icons i {
-  margin: 0 0.3rem;
-  transition: transform 0.2s ease;
+  /* transition: transform 0.2s ease; */
 }
 
 .icons i:hover {
@@ -254,4 +252,80 @@ section {
   background-color: #f1f1f1;
   color: #666;
   font-size: 0.9rem;
+}
+
+/* Default desktop nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+}
+
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;                /* hide by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;                    /* below navbar */
+    left: 0;
+    width: 100%;
+    background: #fff;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    padding: 1rem 0;
+  }
+
+  .navbar ul.show {
+    display: flex; /* show when toggled */
+  }
+
+  .menu-toggle {
+    display: block; /* hamburger visible on mobile */
+  }
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 768px) {
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+.navbar.scrolled {
+  background: linear-gradient(100deg, #085846, #3300ff);;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
