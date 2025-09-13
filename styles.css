@@ -75,47 +75,59 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Skills */
-.skills-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: 60px; /* size of icons */
-  justify-content: center;
-  margin-top: 20px;
-}
-.skills-icons i {
-  transition: transform 0.3s;
-}
-.skills-icons i:hover {
-  transform: scale(1.2);
-}
-
 .skills {
-  background-color: #ffffff;
-  padding: 2rem 1rem;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #f9f9f9;
 }
 
 .skills h2 {
-  text-align: center;
-  color: #0d6efd;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  max-width: 900px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skill-group {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-group:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
 .skill-group h3 {
-  margin-bottom: 0.5rem;
-  color: #6610f2;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #444;
+}
+
+.icons {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.icons i {
+  margin: 0 0.3rem;
+  transition: transform 0.2s ease;
+}
+
+.icons i:hover {
+  transform: scale(1.2);
 }
 
 .skill-group p {
+  font-size: 0.95rem;
   color: #555;
 }
 
