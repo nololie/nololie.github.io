@@ -14,7 +14,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  background: linear-gradient(100deg, #008364, #3300ff);
   color: white;
   padding: 3rem 1rem;
   text-align: center;
@@ -76,6 +76,21 @@ body {
 }
 
 /* Skills */
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 60px; /* size of icons */
+  justify-content: center;
+  margin-top: 20px;
+}
+.skills-icons i {
+  transition: transform 0.3s;
+}
+.skills-icons i:hover {
+  transform: scale(1.2);
+}
+
 .skills {
   background-color: #ffffff;
   padding: 2rem 1rem;
