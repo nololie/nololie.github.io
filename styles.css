@@ -141,9 +141,9 @@ section {
   margin-bottom: 1rem;
 }
 
-.icons i {
-  /* transition: transform 0.2s ease; */
-}
+/* .icons i {
+  transition: transform 0.2s ease;
+} */
 
 .icons i:hover {
   transform: scale(1.2);
@@ -283,8 +283,8 @@ section {
     top: 60px;                    /* below navbar */
     left: 0;
     width: 100%;
-    background: #fff;
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    background: linear-gradient(100deg, #008364, #3300ff);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 1rem 0;
   }
 
