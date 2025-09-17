@@ -174,7 +174,7 @@ h3 {
 }
 
 .btn.live-demo:hover {
-  background: radial-gradient(closest-corner at center, #0d6efd,#00ffffae);
+  background: radial-gradient(closest-corner at center, #00ffff,#0d6efd);
   color: #000000;
 }
 
@@ -189,7 +189,8 @@ h3 {
 }
 
 .btn.github:hover {
-  background-color: #003157af;
+  background: radial-gradient(closest-corner at center, #00ffff,#0d6efd);
+  color: #000000;
 }
 
 /* Contact */
