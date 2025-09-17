@@ -14,3 +14,24 @@ window.addEventListener("scroll", function() {
     navbar.classList.remove("scrolled"); // go back to original style
   }
 });
+
+//Initialize Swiper
+document.addEventListener("DOMContentLoaded", () => {
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+});

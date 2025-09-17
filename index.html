@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NoloLie — Full Stack Web Developer</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
     <div class="hero-content">
       <h1>Hi, I’m L.L. Lefatle</h1>
       <p>Full-Stack Developer & Entrepreneur building solutions that merge technology with business insight. Currently developing <strong>BizEase: Safe Trading Platform</strong>.</p>
-      <a href="#projects" class="btn primary">View My Work</a>
+      <a href="#projects" class="btn primary">View my work</a>
     </div>
   </header>
   
@@ -33,42 +35,8 @@
       <p>I’m a young, enthusiastic Full-Stack Web Developer driven by solving real-world challenges. I bring together frontend, backend, and business thinking to build applications that empower people and businesses. My flagship project, <em>BizEase</em>, is being built to make peer-to-peer trading safer and more trustworthy.</p>
     <p>When I’m not coding, I’m learning new technologies, refining my craft, and dreaming about how tech can change lives — especially for young Africans.</p>
   </section>
-  
-  <section id="skills" class="skills">
-      <h2>Skills</h2>
-      
-      <div class="skills-grid">
-        <div class="skill-group">
-            <h3>Frontend</h3>
-            <div class="icons">
-                <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-        </div>
-        <p>HTML · CSS · JavaScript · DOM manipulation · Responsive Design</p>
-        </div>
-        
-        <div class="skill-group">
-        <h3>Backend</h3>
-        <div class="icons">
-            <i class="devicon-nodejs-plain colored"></i>
-            <i class="devicon-express-original"></i>
-        </div>
-        <p>Node.js · Express · REST APIs · Basic SQL</p>
-    </div>
 
-        <div class="skill-group">
-            <h3>Tools & Other Skills</h3>
-            <div class="icons">
-                <i class="devicon-git-plain colored"></i>
-            <i class="devicon-github-original"></i>
-        </div>
-        <p>Git · GitHub · Problem Solving · Microsoft Office (Word, Excel, PowerPoint)</p>
-        </div>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
+<section id="projects" class="projects">
       <h2>Projects</h2>
       
     <div class="project-card">
@@ -98,9 +66,55 @@
         <p>Explore more of my work through various projects I’ve done while learning and building small apps.</p>
         <a href="https://github.com/nololie" target="_blank" class="btn github">View on GitHub</a>
     </div>
-</section>
+  </section>
+  
+  <section id="skills" class="skills-section">
+    <h2 class="text-center text-3xl font-bold mb-6">Skills</h2>
 
-<section id="contact" class="contact">
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        
+        <!-- Frontend -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="icon" />
+            <h3>Frontend</h3>
+            <p>HTML · CSS · JavaScript · DOM manipulation · Responsive Design</p>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="icon" />
+            <h3>Backend</h3>
+            <p>Node.js · Express · REST APIs · Basic SQL</p>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon" />
+            <h3>Tools & Other Skills</h3>
+            <p>Git · GitHub · Problem Solving · Microsoft Office (Word, Excel, PowerPoint)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  
+  <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:lawrence.lefatle@gmail.com">lawrence.lefatle@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/lawrence-lefatle">Lawrence Lefatle</a></p>
@@ -110,5 +124,7 @@
       <p>© 2025 Lawrence “Nololie” Lefatle. All rights reserved.</p>
   </footer>
   <script src="index.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
